@@ -1,4 +1,4 @@
-package com.piece.web;
+package com.autoservices.piece.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

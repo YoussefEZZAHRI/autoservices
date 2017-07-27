@@ -1,4 +1,4 @@
-package com.piece.entities;
+package com.autoservices.piece.entities;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -10,19 +10,18 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-
-
 @Entity
-public class Motorisation implements Serializable{
+public class CatégoriePieces implements Serializable{
 	@Id @GeneratedValue
-	 private Long idMoteur;
-	 private String nom;
-	 @OneToMany(mappedBy="moteur",fetch=FetchType.LAZY)
-		private Collection<Carburant> carburant;
-	 
+	private Long idCatégorie;
+	private String nomCategorie;
+	private String image;
+	
+	@OneToMany(mappedBy="categoriePiece",fetch=FetchType.LAZY)
+	private Collection<SousCategoriePieces> SCP;
+	
 	 @ManyToOne
-		@JoinColumn(name="CODE_MOD")
-		private Modele modele;
-	 
+		@JoinColumn(name="CODE_Veh")
+		private Vehicule vehicule;
 
 }

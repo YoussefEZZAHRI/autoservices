@@ -1,4 +1,4 @@
-package com.piece.entities;
+package com.autoservices.piece.entities;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.piece;
+package com.autoservices.piece;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
